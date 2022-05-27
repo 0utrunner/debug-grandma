@@ -1,28 +1,28 @@
-let continue = true
+let repeat = true
+let goodbyes = 0
 
-while ( continue ) {
+while ( repeat ) {
 
-    let goodbyes = 0
     let userInput = prompt()
 
-    if ( userInput = "" ) {
+    if ( userInput == "" ) {
         alert("WHAT!?")
     }
-    else if ( userinput.toUppercase != statement ) {
+    else if ( userInput.toUpperCase() != userInput ) {
         alert("SPEAK UP, KID!")
     }
-    else if ( statement.toUppercase == statement ) {
-        alert('NO, NOT SINCE 1946!')
-    }
-    else if ( userinput == "GOODBYE!" ) {
-        goodbyes + 1
+    else if ( userInput == "GOODBYE!" ) {
+        goodbyes++
 
         if ( goodbyes == 1 ) {
-            alert("LEAVING SO SOON?')
+            alert('LEAVING SO SOON?')
         }
-        else if ( goodbyes == 2 ) {
-            alert("LATER, SKATER!")
-            continue = false
-        }
+    }
+    else if ( userInput.toUpperCase() == userInput ) {
+        alert('NO, NOT SINCE 1946!')
+    }
+    if ( goodbyes == 2 ) {
+        alert("LATER, SKATER!")
+        repeat = false
     }
 }
